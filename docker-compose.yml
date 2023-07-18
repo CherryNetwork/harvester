@@ -22,7 +22,7 @@ services:
   substrate-node:
     image: cherrylabsorg/cherry-polkadot-node:dev
     volumes:
-      - '$(pwd):/tmp/cherry-node'
+      - '/cherry:/tmp/cherry-node'
     ports:
       - '9944:9944'
       - '9933:9933'
