@@ -26,7 +26,7 @@ services:
     ports:
       - '9944:9944'
       - '9933:9933'
-    command: --chain cherry --bootnodes /ip4/13.39.82.222/tcp/30333/p2p/12D3KooWChBa8Kk37fZuJJSqkkbYSzstXYXENnanCqDB5eMfA34A --base-path /tmp/cherry-harvester --ws-external --rpc-cors=all --rpc-external --rpc-methods=Unsafe --no-telemetry --no-prometheus --pruning=archive
+    command: --chain cherry-testnet --bootnodes /ip4/13.39.82.222/tcp/30333/p2p/12D3KooWChBa8Kk37fZuJJSqkkbYSzstXYXENnanCqDB5eMfA34A --base-path /tmp/cherry-harvester --ws-external --rpc-cors=all --rpc-external --rpc-methods=Unsafe --no-telemetry --no-prometheus --pruning=archive
 
   mysql:
     image: mysql:latest
